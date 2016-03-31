@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+</head>
+<script language="JavaScript">
+
+imgnum=0
+slideimg=new Array()
+slideimg[0]=new Image()
+
+
+slideimg[0].src="http://www.display-city.ru/lenina.jpg"
+
+ 
+function showslides(){
+document.images[0].src=slideimg[imgnum].src
+imgnum++
+if(imgnum==1) 
+imgnum=0;
+setTimeout("showslides()", 3000) }
+</script>
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.style3 {color: #666666}
+.style4 {
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style5 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+
+<body bgcolor="#FFFFFF" onLoad="showslides()" topmargin="0">
+<br><table width="654" height="178" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="654" height="160" valign="top">
+    <div align="center"><img src="http://www.display-city.ru/lenina.jpg" height="160"></div></td>
+  </tr>
+  <tr>
+    <td height="18" align="center" valign="middle"><span class="style4">1. вид на экран </span><span class="style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style3">&nbsp;2. вид на аудиторию</span></span></span></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+

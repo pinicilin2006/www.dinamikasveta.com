@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<TITLE>Image from webcam</TITLE>
+</HEAD>
+<BODY>
+<IMG src="eldo.jpg" id="img-from-webcam2" width="500" height="180">
+<SCRIPT type="text/javascript">
+<!--
+var intervalID = window.setInterval(function() {
+    var img_url = 'eldo.jpg?rand='+Math.random();
+        document.getElementById('img-from-webcam2').src = img_url;
+        },2000);
+        //-->
+</SCRIPT>
+</BODY>
+</HTML>
+

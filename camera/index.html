@@ -1,0 +1,20 @@
+<b>Play</b>
+<br/>
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+
+<div id="container_1">Loading the player ...</div>
+<div id="container_2">Loading the player ...</div>
+    <script type="text/javascript">
+        jwplayer("container_1").setup({
+        sources: [
+            {
+		file: "rtmp://217.114.177.35:1935/camera1/stream"
+            }
+        ],
+        autostart: true,
+        width: 640,
+        height: 480,
+});
+
+
+</script>

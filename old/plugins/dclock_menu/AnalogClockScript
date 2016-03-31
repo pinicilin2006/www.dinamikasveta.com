@@ -1,0 +1,130 @@
+//Flash Script Code Written by Prateek Shukla
+//http://www.javachip.org
+// -------- all code copyright JavaChip.org --------  //
+//
+//creating base movie clip
+this.createEmptyMovieClip("clock", 3);
+//positioning base movie clip
+clock._x = 150;
+clock._y = 150;
+//creating the circle
+clock.createEmptyMovieClip("circle", 1);
+//drawing the circle
+// setting the line style for the circle
+clock.circle.lineStyle(4, 0x000066, 100);
+clock.circle.moveTo(100, 0);
+// coordinate calculations
+circleRadius = 100;
+for (a=0; a<360; a++) {
+	radAngle = a*Math.PI/180;
+	xCoord = Math.cos(radAngle)*circleRadius;
+	yCoord = Math.sin(radAngle)*circleRadius;
+	clock.circle.lineTo(xCoord, yCoord);
+}
+// big blue frame
+clock.circle.lineStyle(20, 0xECAB13, 100);
+clock.circle.moveTo(114, 0);
+bigCircleRadius = 114;
+for (a=0; a<360; a++) {
+	radAngle = a*Math.PI/180;
+	xCoordBig = Math.cos(radAngle)*bigCircleRadius;
+	yCoordBig = Math.sin(radAngle)*bigCircleRadius;
+	clock.circle.lineTo(xCoordBig, yCoordBig);
+}
+// shining effect on the frame - this must be placed AFTER the big blue frame so that it shows on top of it
+shineAlpha = 10;
+clock.circle.lineStyle(14, 0xFFFFFF, shineAlpha);
+clock.circle.moveTo(-114, 0);
+shineRadius = 114;
+for (a=180; a<=270; a++) {
+	radAngle = a*Math.PI/180;
+	if (a>=180 && a<=210) {
+		shineAlpha = shineAlpha+1;
+	} else {
+		shineAlpha = shineAlpha-1;
+	}
+	xCoordBig = Math.cos(radAngle)*bigCircleRadius;
+	yCoordBig = Math.sin(radAngle)*bigCircleRadius;
+	clock.circle.lineStyle(14, 0xFFFFFF, shineAlpha);
+	clock.circle.lineTo(xCoordBig, yCoordBig);
+}
+// little outline
+outlineAlpha = 40;
+clock.circle.lineStyle(1, 0x000033, outlineAlpha);
+clock.circle.moveTo(104, 0);
+outlineRadius = 104;
+for (ola=0; ola<=360; ola++) {
+	radOutAngle = ola*Math.PI/180;
+	if (ola>=180 && ola<=225) {
+		outlineAlpha = outlineAlpha-1.6;
+	} else if (ola>225 && ola<=270) {
+		outlineAlpha = outlineAlpha+1.6;
+	} else {
+		outlineAlpha = 40;
+	}
+	xOutCoord = Math.cos(radOutAngle)*outlineRadius;
+	yOutCoord = Math.sin(radOutAngle)*outlineRadius;
+	clock.circle.lineStyle(1, 0x000033, outlineAlpha);
+	clock.circle.lineTo(xOutCoord, yOutCoord);
+}
+//drawing the hours' markings
+// setting the line style for the hours' markings
+clock.circle.lineStyle(3, 0x000000, 100);
+clock.circle.moveTo(100, 0);
+// coordinate calculations
+circleRadius = 100;
+smallerCircleRadius = 90;
+for (h=0; h<12; h++) {
+	hourAngle = h*30;
+	radHourAngle = hourAngle*Math.PI/180;
+	xCoord1 = Math.cos(radHourAngle)*circleRadius;
+	yCoord1 = Math.sin(radHourAngle)*circleRadius;
+	xCoord2 = Math.cos(radHourAngle)*smallerCircleRadius;
+	yCoord2 = Math.sin(radHourAngle)*smallerCircleRadius;
+	clock.circle.moveTo(xCoord1, yCoord1);
+	clock.circle.lineTo(xCoord2, yCoord2);
+}
+//drawing the minutes' markings
+// setting the line style for the minutes' markings
+clock.circle.lineStyle(1, 0x000000, 100);
+clock.circle.moveTo(100, 0);
+// coordinate calculations
+circleRadius = 99;
+smallerCircleRadius = 91;
+for (m=0; m<60; m++) {
+	minuteAngle = m*6;
+	radMinuteAngle = minuteAngle*Math.PI/180;
+	xCoord1 = Math.cos(radMinuteAngle)*circleRadius;
+	yCoord1 = Math.sin(radMinuteAngle)*circleRadius;
+	xCoord2 = Math.cos(radMinuteAngle)*smallerCircleRadius;
+	yCoord2 = Math.sin(radMinuteAngle)*smallerCircleRadius;
+	clock.circle.moveTo(xCoord1, yCoord1);
+	clock.circle.lineTo(xCoord2, yCoord2);
+}
+//creating the seconds hand
+clock.createEmptyMovieClip("secondsHand", 40);
+clock.secondsHand.lineStyle(0, 0xFF0000, 100);
+clock.secondsHand.moveTo(0, 0);
+clock.secondsHand.lineTo(0, -90);
+//creating the minutes hand
+clock.createEmptyMovieClip("minutesHand", 30);
+clock.minutesHand.lineStyle(5, 0x000000, 100);
+clock.minutesHand.moveTo(0, 0);
+clock.minutesHand.lineTo(0, -69);
+//creating the hours hand
+clock.createEmptyMovieClip("hoursHand", 20);
+clock.hoursHand.lineStyle(6, 0x000000, 100);
+clock.hoursHand.moveTo(0, 0);
+clock.hoursHand.lineTo(0, -50);
+clock.hoursHand.lineStyle(4, 0xFFFFFF, 100);
+clock.hoursHand.lineTo(0, 0);
+// starting the movement
+clock.onEnterFrame = function() {
+	clockDate = new Date();
+	seconds = clockDate.getSeconds();
+	this.secondsHand._rotation = seconds*6;
+	minutes = clockDate.getMinutes();
+	this.minutesHand._rotation = minutes*6;
+	hours = clockDate.getHours();
+	this.hoursHand._rotation = (hours*30)+(minutes/2);
+};

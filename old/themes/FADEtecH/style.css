@@ -1,0 +1,417 @@
+.ffimgfix{ display:block; }
+.THtop1{ background-image: url(images/THtop1.jpg); }
+.THtop2{ width: 100%; background-repeat: repeat-x; background-image: url(images/THtop2.jpg); text-align: right; }
+.THtop3{ background-image: url(images/THtop3.jpg); }
+
+.THlinks1{ background-image: url(images/THlinks1.jpg); }
+.THlinks2{ width: 100%; background-repeat: repeat-x; background-image: url(images/THlinks2.jpg); font-size: 9px; color: #000; font-family: verdana, tahoma, arial, sans-serif; text-align: left; }
+.THlinks3{ background-image: url(images/THlinks3.jpg); }
+.THsearch{ width: 100%; background-repeat: repeat-x; background-image: url(images/THsearch.jpg); font-size: 9px; color: #000; font-family: verdana, tahoma, arial, sans-serif; text-align: right; }
+.THlinks5{ background-image: url(images/THlinks5.jpg); }
+
+.THlogin1{ background-image: url(images/THlogin1.jpg); }
+.THlogin2{ width: 100%; background-repeat: repeat-x; background-image: url(images/THlogin2.jpg); }
+.THlogin3{ background-image: url(images/THlogin3.jpg); }
+
+.clockleft{ background-image: url(images/clockleft.jpg); }
+.clockm{ width: 100%; background-repeat: repeat-x; background-image: url(images/clockm.jpg); font-size: 9px; color: #000; font-family: tahoma; text-align: right; }
+.clockright{ background-image: url(images/clockright.jpg); }
+
+.leftr5{ background-image: url(images/left_r5.jpg); }
+.rightr5{ background-image: url(images/right_r5.jpg); }
+
+.spacer1{ background-image: url(images/spacer1.jpg); }
+.spacer2{ width: 100%; background-repeat: repeat-x; background-image: url(images/spacer2.jpg); }
+.spacer3{ background-image: url(images/spacer3.jpg); }
+
+.THfooter1{ background-image: url(images/THfooter1.jpg); }
+.THfooter2{ background-repeat: repeat-x; background-image: url(images/THfooter2.jpg); font-size: 9px; color: #000; font-family: verdana, tahoma, arial, sans-serif; text-align: right; }
+.THfooter3{ background-image: url(images/THfooter3.jpg); }
+
+.mt1           { background-image: url(images/img_mt1.jpg); }
+.mtm           { background-repeat: repeat-x; background-image: url(images/img_mtm.jpg); font-size: 12px; color: #fff; font-family: tahoma, arial, sans-serif;  font-weight: bold; text-align: left; }
+.mt2           { background-image: url(images/img_mt2.jpg); }
+.mleft         { background-repeat: repeat-y; background-image: url(images/img_mleft.jpg); }
+.middlemiddle  { background: #D0E6F5; padding: 4px 5px 5px 4px;	font-size: 10px; color: #000; font-family: verdana, tahoma, arial, sans-serif; vertical-align:top; }
+.mright        { background-repeat: repeat-y; background-image: url(images/img_mright.jpg); }
+.md1           { background-image: url(images/img_md1.jpg); }
+.mdbg          { background-repeat: repeat-x; background-image: url(images/img_mdbg.jpg); }
+.md2           { background-image: url(images/img_md2.jpg); }
+
+.mt12          { background-image: url(images/sfmenu_mt12.jpg); }
+.mtm2          { background-repeat: repeat-x; background-image: url(images/sfmenu_mtm2.jpg); font-size: 18px; color: #0958BC; font-family: tahoma, arial, sans-serif;  font-weight: bold; text-align: left; }
+.mt22          { background-image: url(images/sfmenu_mt22.jpg); }
+.mleft2        { background-repeat: repeat-y; background-image: url(images/sfmenu_mleft2.jpg); }
+.middlemiddle2 { background: #F8F8F8; padding: 4px 5px 5px 4px;	font-size: 10px; color: #000; font-family: verdana, tahoma, arial, sans-serif; vertical-align:top; }
+.mright2       { background-repeat: repeat-y; background-image: url(images/sfmenu_mright2.jpg); }
+.md12          { background-image: url(images/sfmenu_md12.jpg); }
+.mdbg2         { background-repeat: repeat-x; background-image: url(images/sfmenu_mdbg2.jpg); }
+.md22          { background-image: url(images/sfmenu_md22.jpg); }
+
+a {
+	color: #0046D5;
+	font-family: verdana, arial, helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;;
+}
+a:hover {
+	color: #000;
+	font-weight: normal;
+	background: Silver url(images/img_mtm.jpg);
+}
+a.forumlink {
+	color: #0046D5;
+	text-decoration: none;
+}
+body {
+	font-size: 11px;
+	color: #264459;
+	font-family: tahoma;
+	background-color: #F8F8F8;
+	background-repeat: repeat-x; margin:0px 0px; padding:0px; text-align: center;
+}
+blockquote {
+	font: italic 9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+form {
+	margin: 2px 0px 0px 0px;
+}
+hr {
+	border-top: #fff 1px solid;
+	border-bottom: #CCCCCC 1px solid;
+	height: 2px;
+	width: 92%;
+	text-align:center;
+}
+img {
+	border:none;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 0px
+}
+td {
+	font:9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 0px;
+	text-align:left;
+}
+.alttd {
+	background-color:#ffffff;
+	border: 1px solid #CCCCCC;
+	margin:2px;
+	padding:3px;
+	border-bottom: 1px solid White;
+}
+.bodytable {
+	padding: 8px;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.bodytable2 {
+	border: #CCCCCC 1px solid;
+	padding: 8px;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.bodytable3 {
+	padding: 8px;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.border {
+	border: #CCCCCC 1px solid;
+}
+.border2 {
+	border: #CCCCCC 1px solid;
+}
+.border3 {
+	border: #CCCCCC 1px solid;
+}
+.bottomborder {
+	border-top: #CCCCCC 1px solid;
+	border-bottom: #CCCCCC 1px solid;
+}
+.button {
+	background-color: #fff;
+	border: #7d7d7d 1px solid;
+	color: #000032;
+	font: 9px tahoma, arial, sans-serif;
+	text-align:center;
+	background-image: url(images/chatbg.jpg);
+}
+.caption {
+	padding: 0px 4px 0px 4px;
+	border-bottom: #CCCCCC 1px solid;
+	border-left: #CCCCCC 1px solid;
+	border-right: #CCCCCC 1px solid;
+	border-top: #CCCCCC 1px solid;
+	background-color: #ffffff;
+	color: #000032;
+	font: 10px verdana, tahoma, arial, sans-serif;
+}
+.caption2 {
+	padding: 0px 4px 0px 4px;
+	color: #000032;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	text-align:center;
+}
+.captiontext {
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.center {
+	text-align: center;
+}
+.customclock {
+	font: 10px tahoma;
+	color: #264459;
+}
+.code {
+	border: #fff 1px solid;
+	padding: 8px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.defaulttext {
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #264459;
+}
+.fborder {
+	border: transparent 0px solid;
+	background-color: transparent;
+	
+}
+.forumborder {
+	border: #CCCCCC 1px solid;
+}
+.forumheader {
+	background-color: #fff;
+	font: 11px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+	background-image : url(images/tbg.png);
+	font-weight: bold;
+}
+.forumheader2 {
+	background-color: #fff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+	background-image: url(images/chatbg.jpg);
+}
+.forumheader3 {
+	background-color: #fff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+	background-image: url(images/chatbg.jpg);
+}
+.forumheader4 {
+	background-color: #fff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+	background-image: url(images/chatbg.jpg);
+}
+.forumtable2 {
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+	background-image: url(images/chatbg.jpg);
+}
+.fcaption {
+	border: #CCCCCC 1px solid;
+	padding: 2px 0px 2px 8px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	background-image : url(images/tbg.png);
+	color: #000032;
+	font-weight: bold;
+}
+.finfobar {
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 4px;
+	border: #CCCCCC 1px solid;
+}
+.helpbox {
+	background-color: #ffffff;
+	color: #000032;
+	font: 9px verdana, tahoma, arial, sans-serif;
+}
+.indent{
+	padding: 5px;
+	margin: 5px;
+	font: 9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	border: 1px solid;
+	background-color: #fff;
+	border-bottom: #39393b 1px solid;
+	border-left: #151515 1px solid;
+	border-right: #39393b 1px solid;
+	border-top: #151515 1px solid;
+	background: url(images/chatbg.jpg);
+}
+.mediumtext {
+	font: 9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.newscomments{
+	background-color: transparent;
+	font: 9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	padding: 2px;
+}
+.nextprev {
+	border: 2px solid #CCCCCC;
+	margin: 10px 4px 0px 4px;
+	color: #000032;
+	text-decoration: none;
+	font: normal 10px verdana, tahoma, arial, sans-serif;
+	text-align:center;
+	padding : 2px 2px 2px 2px;
+	background-color: #ffffff;
+}
+.nforumcaption {
+	padding: 8px 4px 8px 4px;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	background-color: #ffffff;
+	color: #000032;
+	font-weight: bold;
+	background-image: url(images/chatbg.jpg);
+}
+.nforumcaption2 {
+	padding: 8px 0px 8px 4px;
+	font: 11px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	font-weight: bold;
+}
+.nforumcaption3 {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 12px verdana, tahoma, arial, sans-serif;
+	background-image: url(images/chatbg.jpg);
+	font-weight: bold;
+}
+.nforumdisclaimer {
+	font: 9px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.nforumholder {
+	border: 1px solid #CCCCCC;
+	padding: 0px;
+	background-color: #ffffff;
+}
+.nforumreplycaption {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+}
+.nforumreply {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+}
+.nforumreply2 {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+}
+.nforumthread {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	background-image: url(images/chatbg.jpg);
+}
+.nforumthread2 {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+}
+.nforumview1 {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #7D7D7D;
+	font: 12px verdana, tahoma, arial, sans-serif;
+	background-image: url(images/chatbg.jpg);
+	
+}
+.nforumview2 {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+	background-color: #7D7D7D;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	background-image: url(images/chatbg.jpg);
+}
+.nforumview3 {
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	background-image: url(images/chatbg.jpg);
+}
+.nforumview4 {
+	padding: 4px;
+	background-color: #ffffff;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	color: #000032;
+	background-image: url(images/chatbg.jpg);
+}
+.np {
+	background-color: #ffffff;
+	border: #CCCCCC 1px solid;
+	color: #000032;
+	font: 10px verdana, tahoma, arial, sans-serif;
+	text-align:center;
+	padding : 2px;
+}
+.smalltext {
+	font: 9px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #000032;
+}
+.smallblacktext {
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #000032;
+	font-weight: bold;
+}
+.spacer {
+	padding: 0px 0px 0px 0px;
+}
+.tbox {
+	background-color: #F5F5F5;
+	border: #CCCCCC 1px solid;
+	color: #000032;
+	font: 11px verdana, tahoma, arial, sans-serif;
+	font-style: italic;
+}
+
+.left_menu {
+	padding:0px;
+	width: 15%;
+	vertical-align:top;
+	border-right: 1px solid #fff;
+}
+
+.right_menu {
+	padding:0px;
+	width: 15%;
+	vertical-align:top;
+	border-left: 1px solid #fff;

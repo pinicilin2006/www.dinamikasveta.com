@@ -1,0 +1,663 @@
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Styles the html elements
+ **************************************************************/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font: 400 0.8em verdana, arial, sans-serif;
+  line-height: 170%;
+
+  background: #666 url(images/header.jpg) repeat-x top left;
+  color: #EEE;
+}
+
+h1 {   
+  clear: both;
+  font: 700 2.5em "trebuchet ms", serif;
+  color: #FFF;
+}
+
+h2 {
+  font: 400 1.5em "trebuchet ms", serif;
+  color: #9FF3FF;
+}
+
+h2 a {
+  color: #29E3FF;
+}
+
+h2 a:hover {
+  color: #FFF;
+}
+
+h3 {
+  font: 400 1.3em "trebuchet ms", serif;
+  color: #F8D766;
+}
+
+h4 {
+  font: 700 1.2em "trebuchet ms", serif;
+  color: #F39F01;
+}
+
+h5 {
+  font: 700 1.1em "trebuchet ms", serif;
+  color: #F17400;
+}
+
+h6 {
+  font: 700 1em "trebuchet ms", serif;
+  color: #FF4B33;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, dl {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.leftColumn h1 {   
+  clear: both;
+  font: 700 1.5em "trebuchet ms", serif;
+  color: #FFF;
+}
+
+/* Done so the leftmost column aligns properly with the header.
+   If the leftmost column has class gradient applied to it, 
+   this class isn't required. */
+.leftColumn h1,
+.leftColumn h2, 
+.leftColumn h3,
+.leftColumn h4,
+.leftColumn h5,
+.leftColumn h6,
+.leftColumn p,
+.leftColumn dl {
+  padding-left: 0;
+}
+
+a {
+  color: #8BE6FA;
+}
+
+/* Uncomment this if you would like a visited link style 
+a:visited {
+  text-decoration: line-through;
+} */
+
+a:hover {
+  color: #FFF;
+}
+
+b {
+  color: #FFF;
+}
+
+ol, ul {
+  margin: 10px 30px;
+  padding: 0 30px;
+}
+
+ol {
+  color: #FC0;
+}
+
+ol span {
+  color: #EEE;
+}
+
+ul {
+  list-style-image: url(images/bullet.gif);
+}
+
+del {
+  color: #AAA;
+}
+
+code {
+  margin: 10px 15px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  
+  font: 400 1em courier, monospace;
+  line-height: 120%;
+  white-space: pre;
+  
+  background: #444;
+}
+
+.leftColumn code {
+  margin-left: 0;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+dt {
+  font-weight: bold;
+  color: #FFB323;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 45px; 
+}
+
+
+
+
+/**************************************************************
+   Form Elements
+ **************************************************************/
+
+label {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  padding: 2px;
+  font: 400 1em verdana, sans-serif;
+  color: #444;
+  background: #EEE;
+  border: 1px solid #444;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+  color: #000;
+  background: #E4F7FA;
+  border: 1px solid #00DFFF;
+}
+
+
+/**************************************************************
+   Images
+ **************************************************************/
+
+img.floatRight {
+  margin: 5px 0px 10px 15px;  
+}
+
+img.floatLeft {
+  margin: 5px 15px 10px 0px;
+}
+
+a img {  
+  border: 0px;
+}
+
+a:hover img {  
+  border: 0px;
+}
+
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Controls the layout of the site and styles
+            the menus
+ **************************************************************/
+
+
+
+/**************************************************************
+   #content: Sets the width of the site.  Make changes here
+             to convert to a fixed width site.
+ **************************************************************/
+
+#content {  
+  height: 100%;
+  min-height: 100%;
+
+  text-align: left;
+}
+
+#content,
+#width {
+  /* max-width hack for IE since it doesn't understand the valid css property */
+  width: expression(document.body.clientWidth > 1000 ? "1000px" : "94%");  
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#content[id],
+#width[id] {
+  width: 94%;
+  height: auto;
+}
+
+
+
+
+/**************************************************************
+   #header: Holds the site title and header images
+ **************************************************************/
+
+#header {
+  position: relative;
+  height: 193px;
+}
+
+/* Holds the site title and subtitle */
+#header #title {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 130px;
+
+  padding: 5px;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+
+  font: 700 4em "trebuchet ms", serif;
+  letter-spacing: -3px;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+#header h2 {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+
+  margin: 0;
+  padding: 0;
+
+  font: 700 1em "trebuchet ms", serif;
+  text-transform: lowercase;
+  color: #00F0EC;
+}
+
+
+/* Sets where the header images will go */
+#header img.left {
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+}
+
+#header img.right {
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  right: 0;
+}
+
+#header img.balloons {
+  position: absolute;
+  z-index: 2;
+
+  top: 70px;
+  right: 400px;
+}
+
+
+
+/**************************************************************
+   #mainMenu: The top level site menu
+ **************************************************************/
+
+#mainMenu { 
+  float: left;
+  width: 100%;
+  clear: both;  
+}
+
+#mainMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu a {
+  float: left;
+  margin: 0 2px;
+  padding: 5px 0.5em;
+
+  font: 400 1.6em "trebuchet ms", serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+#mainMenu a:hover {
+  color: #65EBFF;
+  border-top: 5px solid #000;
+  margin-bottom: -5px;
+}
+
+#mainMenu li.here a {
+  float: left;
+  margin: 0 2px;
+  padding: 5px 0.5em;
+  border-top: 5px solid #000;
+  font: 400 1.6em "trebuchet ms", serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #65EBFF;
+}
+
+#mainMenu li a.last {
+  margin-right: 0;
+}
+
+
+
+
+
+
+/**************************************************************
+   .sideMenu: The side bar menu
+ **************************************************************/
+
+.sideMenu {
+  margin: 0;
+  padding: 0;
+  font: 400 1.2em "trebuchet ms", serif;
+}
+
+.sideMenu a {
+  margin: 0.2em 0;
+  padding: 3px 5px;    
+  text-decoration: none;
+  color: #FFF;
+} 
+
+.sideMenu a:hover {
+  color: #65EBFF;
+  background: #5F5F5F;
+}
+
+/* Active menu item */
+.sideMenu .here {
+  display: block;
+  padding: 5px;
+  color: #65EBFF;
+  background: #555;
+}
+
+.sideMenu .here a {
+  font: 400 0.8em verdana, arial, sans-serif; 
+  color: #FFF;  
+}
+
+.sideMenu .here a:hover {
+  color: #9FF3FF;
+  font-size: 0.8em;
+}
+
+/**************************************************************
+   #page: Holds the main page content.
+ **************************************************************/
+
+#page {
+  float: left;
+  width: 100%;
+  clear: both;
+  
+  padding-bottom: 4em;
+}
+
+
+
+
+/**************************************************************
+   #footer: The page footer - will stick to the bottom if not
+            enough content.
+ **************************************************************/
+
+#footer {
+  float: left;
+  width: 100%;
+  clear: both;
+  
+  margin-top: -3.8em;
+  background: #000 url(images/footer.jpg) repeat-x top left;
+}
+
+/* Sets the width of the footer content */
+#footer #width {
+  position: relative;
+  z-index: 3;
+  font-size: 0.85em;
+  padding-top: 27px;
+}
+
+
+
+/**************************************************************
+   Width classes used by the site columns
+ **************************************************************/
+
+.width100 {
+  width: 100%;
+}
+
+.width75 {
+  width: 74%;
+}
+
+.width50 {
+  width: 49.7%;
+}
+
+.width33 {
+  width: 32.7%;
+}
+
+.width25 {
+  width: 24.7%;
+}
+
+
+
+/**************************************************************
+   Alignment classes
+ **************************************************************/
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+
+
+/**************************************************************
+   Generic display classes
+ **************************************************************/
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.green {
+  color: #A1FF45;
+}
+
+.red {
+  color: #EA1B00;
+}
+
+.grey {
+  color: #666;
+}
+
+.grey a {
+  color: #999;
+}
+
+.grey a:hover {
+  color: #EEE;
+}
+
+.gradient {
+  margin-bottom: 2em;
+  background: #555 url(images/gradient.jpg) repeat-x bottom left; 
+}
+
+
+/* END LAYOUT  */
+
+
+/* BEGIN E107 CORE CLASSES MAINTAINER QUE~ */
+
+.button{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	text-align:center;
+}
+
+.tbox.chatbox {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.spacer {
+	padding: 2px 0 2px 0;
+}
+
+.indent {
+  margin: 10px 15px;
+  padding: 10px 0 10px 33px;
+  background-color: #444;  
+  background-image: url(images/quote.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;  
+}
+
+.smalltext {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	text-align:center;
+
+	
+}
+
+.mediumtext {
+	font: 12px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.tbox{
+	background-color: #F4F7FA;
+	border: #5e5d63 1px solid;
+	color: #333136;
+	font: 10px verdana, arial, sans-serif;
+}
+
+.helpbox {
+	border: 0px;
+	background-color: transparent;
+	color: #333136;
+	font: 9px verdana, arial, sans-serif;
+}
+
+.fborder {
+	border: #333136 0px solid;
+	background-color: transparent;
+	
+}
+
+.forumheader{
+	background-color: #444;
+	font-family: verdana, arial, sans-serif;
+	font-size: 1em;
+	color: #fff;
+	padding: 4px;
+	border-bottom: 1px solid #333136;
+}
+
+.forumheader2{
+	font-family: verdana, arial, sans-serif;
+	font-size: 1em;
+	color: #EEE;
+	padding: 4px;
+	border-bottom: #333136 1px solid;
+}
+
+.forumheader3{
+	font: 1em verdana, arial, sans-serif;
+	color: #EEE;
+	padding: 4px;
+	border-bottom: #333136 1px solid;
+
+}
+
+.forumborder{
+	border:  #000080 1px solid;
+	background-color: transparent;
+}
+
+.fcaption {
+	border-bottom: #333136 1px solid;
+	padding: 2px 0 2px 8px;
+	font: 1.2em verdana, arial, sans-serif;
+	color:#9FF3FF;
+	text-align: left;
+}
+
+.fcaption a{
+	padding-right: 4px;
+	color: #9FF3FF;
+	text-decoration: underline;
+}
+
+.fcaption a:hover{
+	padding-right: 4px;
+	color :#EEE;
+	text-decoration: underline;
+}
+
+

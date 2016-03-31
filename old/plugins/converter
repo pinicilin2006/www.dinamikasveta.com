@@ -1,0 +1,5 @@
+#!/bin/bash
+files=`find -name "*.php"`
+for i in $files; do cat $i | iconv -f cp1251 -t utf-8 > $i.tmp; rm $i; mv $i.tmp $i; done
+
+
