@@ -64,6 +64,9 @@ p {
 .dark-bg p {
 color: #B1B1B1;	
 }
+a {
+	color: #23AD21;
+}
 
 a:hover, a:focus, a:active, a.active {
 	color: #fec503;
@@ -165,7 +168,7 @@ section ul li:before {
 	color:#000;
 }
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
-	color: #fed136;
+	color: #23AD21;
 	outline: 0
 }
 
@@ -306,6 +309,16 @@ header .intro-text .intro-heading {
 	background: #23AD21;
 }
 
+.section-title h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #5D5D5D;
+	font-weight: 800;
+	letter-spacing: -0.6px;
+	position: relative;
+}
+
+
 .dark-bg .section-title h2 {
 	color: #fff;
 }
@@ -315,6 +328,17 @@ header .intro-text .intro-heading {
 	font-weight: 300;
 	line-height: 25px;
 	margin: 20px 100px 60px 100px;
+}
+
+.section-end h2 {
+	font-size: 34px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	letter-spacing: -0.6px;
+	position: relative;
+	margin-bottom: 1px;
+	padding-bottom: 1px;
 }
 
 /*--------------------
@@ -817,7 +841,7 @@ color: #fff;
 	transition: 1s;
 }
 #back-top a:hover {
-	background: #fed136;
+	background: #23AD21;
 }
 /* arrow icon (span tag) */
 #back-top i {
@@ -841,4 +865,10 @@ and (max-width : 480px) {
 	margin-top: 7px;
 	font-size: 20px;
 }
+}
+#download{
+	margin-top: 10%;
+}
+#office{
+	margin-top: 5%;
 }
